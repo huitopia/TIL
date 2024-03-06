@@ -48,3 +48,73 @@ div {
 ```
 
 <img width="200" alt="스크린샷 2024-01-31 12 39 53" src="https://github.com/huitopia/TIL/assets/87823892/9526fc58-e5fc-4851-864d-d59c69e9505c">
+
+## 응용
+
+> tip에 마우스 커서 올리면 가려진 정보 나타남
+> ![Feb-02-2024 11-08-39](https://github.com/huitopia/TIL/assets/87823892/4c46e412-3ea8-41de-8675-d918179900c4)
+
+```CSS
+.tip {
+  border: 1px solid yellow;
+  width: 50px;
+  height: 50px;
+  border-radius: 70%;
+}
+.tip:hover div {
+  margin-left: 0;
+}
+.tip p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+.tip div {
+  border: 1px solid skyblue;
+  width: 300px;
+  height: 70px;
+  line-height: 70px;
+  margin-left: -300px;
+  transition: all 0.5s;
+}
+```
+
+.tip div에 margin-left로 부모 기준으로 옆에 밀어 숨겼다가 tip:hover시 div의 margin-left를 0으로 만들어 숨겨놨던 .tip div를 보이게함
+
+> top 응용
+> ![Feb-02-2024 11-22-37](https://github.com/huitopia/TIL/assets/87823892/9cf3594a-7170-4d4c-8da3-6405389e61bb)
+
+```CSS
+.tip {
+  position: fixed;
+  bottom: 200px;
+  right: 0px;
+  border: 1px solid yellow;
+  width: 50px;
+  height: 50px;
+  border-radius: 70%;
+}
+.tip:hover div {
+  margin-left: -250px;
+}
+.tip p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+.tip div {
+  border: 1px solid skyblue;
+  width: 300px;
+  height: 70px;
+  line-height: 70px;
+  margin-left: 50px;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s;
+  background-color: rgb(255, 196, 0);
+}
+```
+
+상위 클래스 .tip에 position 있으므로 .tip div에 position 주고 top 지정하여 위치 변경
