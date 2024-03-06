@@ -51,8 +51,9 @@ div {
 
 ## 응용
 
-> tip에 마우스 커서 올리면 가려진 정보 나타남
-> ![Feb-02-2024 11-08-39](https://github.com/huitopia/TIL/assets/87823892/4c46e412-3ea8-41de-8675-d918179900c4)
+### tip에 마우스 커서 올리면 가려진 정보 나타남
+
+![Feb-02-2024 11-08-39](https://github.com/huitopia/TIL/assets/87823892/4c46e412-3ea8-41de-8675-d918179900c4)
 
 ```CSS
 .tip {
@@ -82,8 +83,9 @@ div {
 
 .tip div에 margin-left로 부모 기준으로 옆에 밀어 숨겼다가 tip:hover시 div의 margin-left를 0으로 만들어 숨겨놨던 .tip div를 보이게함
 
-> top 응용
-> ![Feb-02-2024 11-22-37](https://github.com/huitopia/TIL/assets/87823892/9cf3594a-7170-4d4c-8da3-6405389e61bb)
+### top 응용
+
+![Feb-02-2024 11-22-37](https://github.com/huitopia/TIL/assets/87823892/9cf3594a-7170-4d4c-8da3-6405389e61bb)
 
 ```CSS
 .tip {
