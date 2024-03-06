@@ -81,9 +81,9 @@ div {
 }
 ```
 
-.tip div에 margin-left로 부모 기준으로 옆에 밀어 숨겼다가 tip:hover시 div의 margin-left를 0으로 만들어 숨겨놨던 .tip div를 보이게함
+.tip `div`에 `margin-left`로 부모 기준으로 옆에 밀어 숨겼다가 `tip:hover`시 `div`의 `margin-left`를 0으로 만들어 숨겨놨던 .tip `div`를 보이게함
 
-### top 응용
+### `top` 응용
 
 ![Feb-02-2024 11-22-37](https://github.com/huitopia/TIL/assets/87823892/9cf3594a-7170-4d4c-8da3-6405389e61bb)
 
@@ -119,4 +119,8 @@ div {
 }
 ```
 
-상위 클래스 .tip에 position 있으므로 .tip div에 position 주고 top 지정하여 위치 변경
+상위 클래스 .tip에 `position` 있으므로 .tip `div`에 `position` 주고 `top` 지정하여 위치 변경
+
+## `position` 적용 시 `padding` 효과 사라지는 이유
+
+부모 태그에 `padding`적용 후 자식 태그에서 `position` 적용 시 `padding` 효과 사라져 자식 태그에서 다시 `position` `top`, `left`를 지정하거나 `padding` 지정한다.
